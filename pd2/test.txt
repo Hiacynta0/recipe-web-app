@@ -1,0 +1,6 @@
+blue
+red
+yellow
+pink
+green
+Some words to fill the string
