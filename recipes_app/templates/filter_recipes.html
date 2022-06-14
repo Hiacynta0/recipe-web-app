@@ -1,0 +1,20 @@
+{% extends "basic_layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="" enctype='multipart/form-data'>
+            <a>Filter with tags</a>
+            <div class="form-check tags-container">
+                {% for filter in form.filters %}
+                    <div class="tag">
+                        {{filter()}}
+                        <div>{{filter.label(class="tag-label")}}</div>
+                    </div>
+                {% endfor %}
+            </div>
+            <br>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info bottom-button") }}
+            </div>
+        </form>
+    </div>
+{% endblock content %}

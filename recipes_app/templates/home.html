@@ -1,0 +1,30 @@
+{% extends "basic_layout.html" %}
+{% block content %}
+    {% for recipe in recipes.items %}
+        <article class="media content-section">
+            <div class="media-body">
+                <div class="article-metadata">
+                    <a class="mr-2"
+                       href="{{ url_for('show_user_recipes', username=recipe.author.username) }}">{{ recipe.author.username }}</a>
+                    <small class="text-muted"> posted on {{ recipe.date_posted.strftime('%Y-%m-%d') }}</small>
+                </div>
+                <h2><a class="article-title"
+                       href="{{ url_for('show_recipe', recipe_id=recipe.id) }}">{{ recipe.recipe_name }}</a></h2>
+                <img class="rounded article-img"
+                     src="{{ url_for('static', filename='food_images/' + recipe.food_image) }}">
+            </div>
+        </article>
+    {% endfor %}
+    {% for page_number in recipes.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+        {% if page_number %}
+            {% if recipes.page == page_number %}
+                <a class="btn btn-info mb-4 bottom-button-picked" href="{{ url_for('home', page=page_number) }}">{{ page_number }}</a>
+            {% else %}
+                <a class="btn btn-outline-info mb-4 bottom-button"
+                   href="{{ url_for('home', page=page_number) }}">{{ page_number }}</a>
+            {% endif %}
+        {% else %}
+            ...
+        {% endif %}
+    {% endfor %}
+{% endblock content %}

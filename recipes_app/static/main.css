@@ -1,0 +1,304 @@
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+.bg-steel {
+  background-color: #d4a1c2;
+}
+
+.site-header .navbar-nav .nav-link {
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+  margin-top: 30px;
+}
+
+.article-img {
+  height: 300px;
+  width: 300px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 10px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3;
+  display: flex;
+  align-items: center;
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.checked {
+  color: #e8cb39;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: flex;
+  margin-right: 10px;
+}
+
+.tag-label {
+  margin-bottom: 0;
+  margin-left: 5px;
+  font-size: 16px;
+}
+
+.tag-input {
+  display: flex;
+}
+
+.title {
+  font-size: 32px;
+  text-shadow: 2px 1px black;
+  transform: rotate(-7deg);
+  transition: 1s;
+}
+
+.title:hover {
+  transition: 1s;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+}
+
+.star-icon {
+  margin: auto;
+  height: 26px;
+  transition: 1s;
+}
+
+.recipe-options {
+  padding-left: 20px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 15px;
+}
+
+.home-icon {
+  height: 36px !important;
+  opacity: 0.5;
+}
+
+.home-icon:hover {
+  opacity: 1;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  max-width: 600px;
+}
+
+.search-bar-container {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.search-bar-button {
+  opacity: 0.6;
+  color: black !important;
+  background-color: white !important;
+  transition: 0.2s;
+}
+
+.search-bar-button:hover {
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
+.search-bar-input {
+  outline: 0;
+}
+
+.main-container {
+  padding-top: 25px;
+}
+
+.fixed-sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  width: 320px;
+}
+
+.sidebar-option {
+  font-size: 24px;
+  color: #d4a1c2;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.sidebar-option:hover {
+  transition: 0.5s;
+  color: #BD69C2;
+  letter-spacing: 3px;
+}
+
+.auth-link {
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  opacity: 0.75;
+  margin-right: 20px;
+}
+
+.auth-link:hover {
+  color: black !important;
+  opacity: 1;
+}
+
+.stark-container {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.bottom-button {
+  color: #BD69C2;
+  border: 1px solid #dddddd;
+  outline: 0;
+  background-color: white;
+}
+
+.bottom-button-picked {
+  color: white;
+  background-color: #d4a1c2;
+  border: 1px solid #dddddd;
+  outline: 0;
+}
+
+.bottom-button-picked:hover {
+  background-color: #d4a1c2;
+  outline: 0;
+  border: 1px solid #dddddd;
+  color: #dddddd;
+}
+
+.bottom-button:hover {
+  background-color: #d4a1c2;
+  outline: 0;
+  border: 1px solid #dddddd;
+}
+
+.bottom-button:active {
+  background-color: #d4a1c2 !important;
+  outline: 0 !important;
+  border: 1px solid #dddddd !important;
+}
+
+.bottom-button-picked:active {
+  background-color: #d4a1c2 !important;
+  outline: 0 !important;
+  border: 1px solid #dddddd !important;
+}
+
+.bottom-button:focus {
+  box-shadow: none !important;
+}
+
+.bottom-button-picked:focus {
+  box-shadow: none !important;
+}

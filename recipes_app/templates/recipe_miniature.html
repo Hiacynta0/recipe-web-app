@@ -1,0 +1,14 @@
+{% extends "basic_layout.html" %}
+{% block content %}
+    <article class="media content-section">
+        <div class="media-body">
+            <div class="article-metadata">
+                <a class="mr-2"
+                   href="{{ url_for('show_user_recipes', username=recipe.author.username) }}">{{ recipe.author.username }}</a>
+                <small class="text-muted"> posted on {{ recipe.date_posted.strftime('%Y-%m-%d') }}</small>
+            </div>
+            <h2 class="article-title">{{ recipe.recipe_name }}</h2>
+            <img class="rounded article-img" src="{{ url_for('static', filename='food_images/' + recipe.food_image) }}">
+        </div>
+    </article>
+{% endblock content %}
