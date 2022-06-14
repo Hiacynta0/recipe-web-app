@@ -4,7 +4,7 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '1a205a46e540bbbb68e63d847a79b3bc'
+#app.config['SECRET_KEY'] = "tu wstawić key"
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
