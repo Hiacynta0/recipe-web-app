@@ -1,4 +1,4 @@
-# recipe-web-app
+# Recipe Web App
 
 </br>
 
